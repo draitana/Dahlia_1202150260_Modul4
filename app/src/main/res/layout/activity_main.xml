@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/Padding"
+    android:paddingRight="@dimen/Padding"
+    android:paddingTop="@dimen/Padding"
+    android:paddingBottom="@dimen/Padding"
+    tools:context="com.example.a3d.dahlia_1202150260_studycase4.MainActivity">
+
+    <TextView
+        android:id="@+id/ListMhs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:text="@string/list_nama"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:background="@color/colorAccent"
+        android:onClick="mulai"
+        android:text="@string/mulai"
+        android:textColor="@color/colorText" />
+
+    <ListView
+        android:id="@+id/listnama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp">
+
+    </ListView>
+
+</LinearLayout>

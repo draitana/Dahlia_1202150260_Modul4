@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">DAHLIA_1202150260_STUDYCASE4</string>
+    <string name="list_mahasiswa">List Mahasiswa</string>
+    <string name="gambar">Cari Gambar</string>
+    <string name="cari_gambar">Klik untuk mencari gambar</string>
+    <string name="text_cari_gambar">Masukkan URL Gambar</string>
+    <string name="list_nama">List Nama Mahasiswa</string>
+    <string name="mulai">Mulai AsyncTask</string>
+    <string-array name="namaMhs">
+        <item>Supsap Ployshompoo</item>
+        <item>Adulkittiporn Jumpol</item>
+        <item>Ruangroj Prachaya</item>
+        <item>Sangpotirat Perawat</item>
+        <item>Khunatipapisiri Korn</item>
+        <item>Thitipoom Techaapaikhun</item>
+        <item>Pinnirat Suradej</item>
+        <item>God Itthipat Thanit</item>
+        <item>Kerdthongtavee Panuwat</item>
+        <item>Khemmonta Varodom</item>
+        <item>Kreepolrerk Darvid</item>
+        <item>Jarujittranon Tanapol</item>
+        <item>Maripha Siripool</item>
+
+    </string-array>
+</resources>

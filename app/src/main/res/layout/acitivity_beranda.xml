@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/Padding"
+    android:paddingRight="@dimen/Padding"
+    android:paddingTop="@dimen/Padding"
+    android:paddingBottom="@dimen/Padding">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin"
+        android:background="@color/colorAccent"
+        android:onClick="list_mahasiswa"
+        android:text="@string/list_mahasiswa"
+        android:textColor="@color/colorText" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/Padding"
+        android:background="@color/colorAccent"
+        android:onClick="cari_gambar"
+        android:text="@string/gambar"
+        android:textColor="@color/colorText" />
+
+</LinearLayout>
