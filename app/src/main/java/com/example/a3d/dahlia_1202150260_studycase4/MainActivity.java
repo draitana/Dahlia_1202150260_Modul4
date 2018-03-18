@@ -12,18 +12,24 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
+   //deklarasi variable
     ListView listnm;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate ( savedInstanceState );
         setContentView ( R.layout.activity_main );
+        //mengatur judul tampilan
         setTitle ( "AsyncTask" );
+
+        //memangil variable dari layout
         listnm = findViewById ( R.id.listnama );
     }
 
+    //method ketika button di-klik
     public void mulai(View view) {
-        new getData (listnm).execute();
+
+        new getData (listnm).execute(); //asynctak mulai berjalan
     }
 
     private class getData extends AsyncTask {
@@ -32,13 +38,14 @@ public class MainActivity extends AppCompatActivity {
         ArrayList<String> listnama;
         ProgressDialog dialog;
 
+        //konstruktur saat asynctask
         public getData(ListView listnm) {
             this.listnm = listnm;
             dialog = new ProgressDialog(MainActivity.this);
             listnama = new ArrayList<>();
         }
 
-
+    //method ketika proses asynctask belum berjalan
         @Override
         protected void onPreExecute() {
             super.onPreExecute ();
@@ -59,11 +66,16 @@ public class MainActivity extends AppCompatActivity {
             dialog.show ();
 
         }
-
+    //method ketika proses asynctask berjalan
         @Override
         protected Object doInBackground(Object[] objects) {
+            //adapter array
             adapter = new ArrayAdapter<> (MainActivity.this, android.R.layout.simple_list_item_1, listnama  );
+
+            //array disimpan pada variable mhs
             String[] mhs = getResources().getStringArray(R.array.namaMhs);
+
+            //perulangan untuk menyimpan array
             for (int a = 0; a < mhs.length; a++) {
                 final long persen = 100L * a / mhs.length;
                 final String nama = mhs[a];
@@ -83,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
             }
             return null;
         }
-
+    //proses ketika asynctask sudah berjalan
         @Override
         protected void onPostExecute(Object o) {
             super.onPostExecute ( o );

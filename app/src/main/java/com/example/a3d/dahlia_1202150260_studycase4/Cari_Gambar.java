@@ -14,6 +14,7 @@ import com.squareup.picasso.Picasso;
  */
 
 public class Cari_Gambar extends AppCompatActivity {
+    //deklarasi variable
     ImageView gambar;
     EditText link;
 
@@ -22,9 +23,13 @@ public class Cari_Gambar extends AppCompatActivity {
         super.onCreate ( savedInstanceState );
         setContentView ( R.layout.activity_cari_gambar );
         setTitle ( "AsyncTask" );
+
+        //memangil variable dari layout
         gambar = findViewById ( R.id.gambar );
         link = findViewById ( R.id.link );
     }
+
+    //method ketika button di klik
     public void cari (View view) {
         Picasso.with ( Cari_Gambar.this ).load ( link.getText ().toString () )
                 .placeholder ( R.mipmap.ic_launcher_round )
